@@ -1,1 +1,7 @@
-
+CREATE FUNCTION quadrado(valor INTEGER)
+RETURNS INTEGER
+AS $$
+BEGIN
+RETURN valor*valor;
+END;
+$$ LANGUAGE plpgsql;
