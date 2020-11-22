@@ -6,7 +6,7 @@ SET @classe := (SELECT INTO @classe cl.classe
 FROM cliente_voo cv
 WHERE cv.voo=cod_voo
 AND cod_cliente=cv.cliente;
-RETURN 
+RETURN @classe;
 
 END $
 DELIMITER;
